@@ -16,6 +16,10 @@
   color: white;
 }
 
+.flex {
+  display: flex;
+}
+
 /* macrostruttura 1/2 */
 #parteprincipale {
   height: calc(100vh - 100px);
@@ -165,22 +169,132 @@
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  flex-wrap: nowrap;
+}
+
+#musicplayer a {
+  color: grey;
+  text-decoration: none;
+}
+
+#musicplayer a:hover {
+  color: white;
 }
 
 /* 3 div dentro a musicplayer */
 #canzone{
-  height: 90px;
-  width: 150px;
+  height: 100px;
+  width: 250px;
   background-color: red;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
 }
-#comandi{
-  height: 90px;
-  width: 150px;
-  background-color: red;
+
+#canzone img {
+  height: 50px;
+  min-width: auto;
 }
+
+#canzone i {
+  font-size: 20px;
+  padding: 5px;
+}
+
+
+
+#comandi {
+  height: 100px;
+  min-width: 350px;
+  background-color: blue;
+  text-align: center;
+}
+
+#playetc {
+  width: 70%;
+  margin: 0 auto;
+  height: 50px;
+  /* width: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+
+#playetc i{
+  font-size: 20px;
+  color: white;
+}
+#play {
+  font-size: 25px !important;
+}
+#play:hover {
+  font-size: 35px !important;
+}
+
+#playetc i:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#containerbar {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+
+}
+
+#bigbar {
+  background-color: grey;
+  border-left: 50px solid white;
+  height: 5px;
+  width: 200px;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#bigbar:hover {
+  border-left-color: lightgreen;
+  cursor: pointer;
+}
+
+
+
 #volume{
-  height: 90px;
-  width: 150px;
-  background-color: red;
-  /* sdohs */
+  height: 100px;
+  min-width: 200px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
 }
+
+#smallbar {
+  background-color: grey;
+  border-left: 30px solid white;
+  height: 5px;
+  width: 100px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#smallbar:hover {
+  border-left-color: lightgreen;
+  cursor: pointer;
+}
+/*
+#pallino {
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  display: none;
+} */
