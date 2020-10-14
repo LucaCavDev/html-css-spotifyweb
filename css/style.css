@@ -1,0 +1,185 @@
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pagina {
+  display: flex;
+  /* background-color: red; */
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.white {
+  color: white;
+}
+
+/* macrostruttura 1/2 */
+#parteprincipale {
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-color: green;
+  display: flex;
+
+}
+
+/* inizia l'interno di parte parteprincipale */
+#menulaterale {
+  padding: 20px;
+  width: 200px;
+  height: 100%;
+  background-color: #000000;
+  color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+/* colore bianco e barretta a lato verde */
+#menulaterale a:hover {
+  color: white;
+}
+
+#menulaterale a {
+  text-decoration: none;
+  color: grey;
+  /* text-align: center; */
+}
+
+#menulaterale ul {
+  list-style-type: none;
+}
+
+/* roba dentro al menulaterale */
+#spotify img {
+  width: 150px;
+  height: auto;
+}
+
+
+
+#home img {
+  width: 24px;
+  height: 24px;
+}
+
+
+#home li:hover {
+  border-left: green solid 2px;
+}
+
+/* non mi funziona */
+#playlist {
+  /* max-height: 100px;
+
+  overflow: auto; */
+}
+
+
+#playlist i {
+  font-size: 40px;
+}
+
+#installaapp {
+  align-self: flex-end;
+  width: 100%;
+}
+
+#installa {
+  border-bottom: 1px solid grey;
+}
+
+
+#profilo a img {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  color: white;
+  border-radius: 50%;
+}
+
+/* fine roba dentro il menu laterale */
+
+#sezionecentrale {
+  background-color: #080B12;
+  height: 100%;
+  width: calc(100vw - 200px);
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* inizia interno sezionecentrale */
+
+#upgradebar{
+  background-color: #080B12;
+  /* trasparenza colore di sfondo blocco */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* position: fixed; */
+  z-index: 11;
+
+}
+
+#buttonupgrade {
+  background-color: #080B12;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 1vw;
+}
+
+.boombutton { transition: all .2s ease-in-out; }
+.boombutton:hover { transform: scale(1.1); }
+#buttonupgrade a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#paginonaplaylist {
+  background-color: #141922;
+  height: 100%;
+  width: 100%;
+}
+
+/* fine sezionecentrale */
+/* fine .parteprincipale */
+
+
+/* macrostruttura 2/2 */
+#musicplayer {
+  width: 100%;
+  height: 100px;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+/* 3 div dentro a musicplayer */
+#canzone{
+  height: 90px;
+  width: 150px;
+  background-color: red;
+}
+#comandi{
+  height: 90px;
+  width: 150px;
+  background-color: red;
+}
+#volume{
+  height: 90px;
+  width: 150px;
+  background-color: red;
+}
