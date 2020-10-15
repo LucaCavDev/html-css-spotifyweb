@@ -63,7 +63,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 /* roba dentro al menulaterale */
-#spotify img {
+#logobig {
   width: 150px;
   height: auto;
 }
@@ -103,6 +103,55 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   border-radius: 50%;
 }
 
+/* devo toccare il menulaterale, ma se tocco solo lui devo sistemare il resto dei contenitori che se no lasciano un pezzo vuoto a destra */
+@media all and (max-width: 576px) {
+  #logobig {
+    display: none;
+  }
+
+  #menulaterale span {
+    display: none;
+  }
+
+  #playlist {
+    display: none;
+  }
+
+  #installa {
+    border-bottom: none;
+  }
+
+  #menulaterale {
+    justify-content: center;
+  }
+
+  #logosmall {
+    width: 50px;
+    height: auto;
+  }
+
+
+
+}
+
+@media all and (min-width: 577px) {
+  #logosmall {
+    display: none;
+
+  }
+
+  
+
+
+}
+
+
+
+
+
+
+
+
 /* fine roba dentro il menu laterale */
 
 #sezionecentrale {
@@ -119,6 +168,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #upgradebar{
   background-color: rgba(8, 11, 18, 0.8);
   /* trasparenza colore di sfondo blocco */
+  /* ok la trasparenza non la vedo perchè forse il bloccco sotto finische li e non continua sotto upgrade */
   height: 100px;
   width: 100%;
   display: flex;
