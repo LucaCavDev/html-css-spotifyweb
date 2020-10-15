@@ -5,11 +5,18 @@
   box-sizing: border-box;
 }
 
+/* consideriamo i limiti per le mediaquery
+xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
+
+
+
 #pagina {
   display: flex;
   /* background-color: red; */
   height: 100vh;
   flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
 }
 
 .white {
@@ -33,9 +40,8 @@
 #menulaterale {
   padding: 20px;
   width: 200px;
-  height: 100%;
+  /* height: 100%; */
   background-color: #000000;
-  color: grey;
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
@@ -48,7 +54,7 @@
 
 #menulaterale a {
   text-decoration: none;
-  color: grey;
+  color: inherit;
   /* text-align: center; */
 }
 
@@ -75,11 +81,7 @@
 }
 
 /* non mi funziona */
-#playlist {
-  /* max-height: 100px;
 
-  overflow: auto; */
-}
 
 
 #playlist i {
@@ -108,7 +110,7 @@
 
 #sezionecentrale {
   background-color: #080B12;
-  height: 100%;
+  /* height: 100%; */
   width: calc(100vw - 200px);
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +120,7 @@
 /* inizia interno sezionecentrale */
 
 #upgradebar{
-  background-color: #080B12;
+  background-color: rgba(8, 11, 18, 0.8);
   /* trasparenza colore di sfondo blocco */
   height: 100px;
   width: 100%;
@@ -153,14 +155,107 @@
 
 #paginonaplaylist {
   background-color: #141922;
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  overflow-y: auto;
 }
+
+#menumusica {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+
+}
+/* inizio cose dentro la paginonaplaylist/main */
+#menumusica a {
+  color: grey;
+  text-decoration: none;
+  margin: 15px;
+  height: 20px;
+  /* background-color: red; */
+}
+
+#menumusica a:hover {
+  border-bottom: green solid 2px;
+}
+
+
+
+
+
+.rigonaalbum {
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  text-align: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.singoloalbum img{
+  width: 100%
+  height: auto;
+  flex-shrink: 1;
+}
+.singoloalbum {
+  width: calc(100% / 6);
+  padding: 0 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+.imgeicona{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.imgeicona .far.fa-play-circle {
+  position: absolute;
+  font-size: 50px;
+  display: none;
+}
+
+.singoloalbum:hover .far.fa-play-circle {
+  display: block;
+}
+
+.singoloalbum:hover img {
+  filter: brightness(0.2);
+}
+
+
+#paginonaplaylist a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .singoloalbum {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .singoloalbum {
+    width: 50%;
+  }
+}
+
 
 /* fine sezionecentrale */
 /* fine .parteprincipale */
 
-
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* macrostruttura 2/2 */
 #musicplayer {
   width: 100%;
@@ -263,7 +358,6 @@
 #bigbar:hover + .fa-circle {
   display: block;
 }
-
 
 
 #bigbar {
