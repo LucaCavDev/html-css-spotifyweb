@@ -17,6 +17,12 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   flex-wrap: wrap;
   font-family: 'Montserrat', sans-serif;
   color: grey;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .white {
@@ -63,11 +69,21 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 /* roba dentro al menulaterale */
+
+
 #logobig {
   width: 150px;
   height: auto;
+  padding-bottom: 20px;
 }
 
+#home ul {
+  margin-bottom: 30px;
+}
+
+#home li {
+  margin-bottom: 10px;
+}
 
 
 #home img {
@@ -85,10 +101,19 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   font-size: 40px;
 }
 
+#playlist ul {
+  margin-bottom: 30px;
+}
+
+#playlist li {
+  margin-bottom: 10px;
+}
+
 #installaapp {
   align-self: flex-end;
   width: 100%;
 }
+
 
 #installa {
   border-bottom: 1px solid grey;
@@ -109,6 +134,14 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
     display: none;
   }
 
+  #menulaterale {
+    width: 100px;
+  }
+
+  #sezionecentrale {
+    width: 100vw !important;
+  }
+
   #menulaterale span {
     display: none;
   }
@@ -123,13 +156,13 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
   #menulaterale {
     justify-content: center;
+    /* width: 100px; */
   }
 
   #logosmall {
     width: 50px;
     height: auto;
   }
-
 
 
 }
@@ -140,7 +173,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
   }
 
-  
+
 
 
 }
@@ -166,7 +199,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 /* inizia interno sezionecentrale */
 
 #upgradebar{
-  background-color: rgba(8, 11, 18, 0.8);
+  background-color: rgba(8, 11, 18, 0.6);
   /* trasparenza colore di sfondo blocco */
   /* ok la trasparenza non la vedo perchè forse il bloccco sotto finische li e non continua sotto upgrade */
   height: 100px;
@@ -219,6 +252,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 5%;
 
 
 }
@@ -238,10 +272,12 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 #recently {
   max-height: 100%;
+  margin-bottom: 5%;
 }
 
 #creato {
   max-height: 100%;
+  margin-bottom: 5%;
 }
 
 #artistipopolari {
