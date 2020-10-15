@@ -116,10 +116,13 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 
 #installa {
+  padding-bottom: 10px;
   border-bottom: 1px solid grey;
 }
 
-
+#profilo {
+  padding-top: 10px;
+}
 #profilo a img {
   width: 30px;
   height: 30px;
@@ -142,17 +145,11 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
     width: 100vw !important;
   }
 
-  #menulaterale span {
+  /* #menulaterale span {
     display: none;
-  }
+  } */
 
-  #playlist {
-    display: none;
-  }
 
-  #installa {
-    border-bottom: none;
-  }
 
   #menulaterale {
     justify-content: center;
@@ -164,13 +161,56 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
     height: auto;
   }
 
+  #home ul {
+    display: none;
+  }
+
+  #homesmall {
+    text-align: center;
+  }
+
+  #homesmall img{
+    margin-top: 20px;
+    height: auto;
+    width: 30px;
+  }
+
+  #playlist {
+    display: none;
+  }
+
+  #installa {
+    border-bottom: none;
+  }
+
+  #installaapp {
+    text-align: center;
+  }
+
+  #installaapp span {
+    display: none;
+  }
+
+  #installa i {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  #profilo img {
+    transform: scale(1.6);
+  }
+
+
 
 }
 
 @media all and (min-width: 577px) {
   #logosmall {
     display: none;
+  }
 
+  #homesmall {
+    display: none;
   }
 
 
