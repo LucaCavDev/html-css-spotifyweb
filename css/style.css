@@ -80,9 +80,6 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   border-left: green solid 2px;
 }
 
-/* non mi funziona */
-
-
 
 #playlist i {
   font-size: 40px;
@@ -191,16 +188,16 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 .rigonaalbum {
   flex-wrap: wrap;
-  flex-shrink: 1;
-  text-align: center;
+  /* flex-shrink: 1; */
+  /* text-align: center; */
   justify-content: flex-start;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
-.singoloalbum img{
+.rigonaalbum img{
   width: 100%
   height: auto;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
 }
 .singoloalbum {
   width: calc(100% / 6);
@@ -250,6 +247,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
     width: 50%;
   }
 }
+
 
 
 /* fine sezionecentrale */
