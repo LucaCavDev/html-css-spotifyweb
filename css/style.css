@@ -46,10 +46,11 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #menulaterale {
   padding: 20px;
   width: 200px;
-  /* height: 100%; */
+  max-height: 100%;
   background-color: #000000;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;        /* ATTENZIONE */
   /* justify-content: space-between; */
 }
 
@@ -69,12 +70,18 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 /* roba dentro al menulaterale */
-
+#spotify {
+  z-index: 4; /* ATTENZIONE */
+}
 
 #logobig {
   width: 150px;
   height: auto;
   padding-bottom: 20px;
+}
+
+#home {
+  z-index: 2;
 }
 
 #home ul {
@@ -96,6 +103,10 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   border-left: green solid 2px;
 }
 
+#playlist {
+  z-index: 1; /* ATTENZIONE */
+  
+}
 
 #playlist i {
   font-size: 40px;
@@ -112,6 +123,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #installaapp {
   align-self: flex-end;
   width: 100%;
+  z-index: 3;       /* ATTENZIONE */
 }
 
 
@@ -212,6 +224,11 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   #homesmall {
     display: none;
   }
+
+  /* #playlist {
+    overflow: scroll;
+    max-height: 100%;
+  } */
 
 
 
