@@ -43,6 +43,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   width: 100%;
   background-color: green;
   display: flex;
+  overflow: hidden;
 
 }
 
@@ -243,7 +244,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #sezionecentrale {
   background-color: #080B12;
   /* height: 100%; */
-  max-height: 100%;
+  /* max-height: 100%; */
   width: calc(100vw - 200px);
   /* display: flex;
   flex-wrap: wrap; */
@@ -290,8 +291,8 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #paginonaplaylist {
   background-color: #141922;
   max-height: 100vh;
-  /* word-wrap:break-word;
-  overflow: hidden; */
+  /* word-wrap:break-word; */
+  /* overflow: hidden; */
   /* width: 100%; */
   /* display: flex; */
   /* justify-content: center; */
@@ -336,7 +337,6 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 #artistipopolari {
   max-height: 100%;
-  margin-bottom: 10%;
 }
 
 #artistipopolari img {
@@ -399,12 +399,17 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 577px) and (max-width: 768px) {
   .singoloalbum {
     width: 50%;
   }
 }
 
+@media all and (max-width: 576px) {
+  #artistipopolari {
+    margin-bottom: 50%;
+  }
+}
 
 
 /* fine sezionecentrale */
