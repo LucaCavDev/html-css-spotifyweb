@@ -7,9 +7,7 @@
 
 /* consideriamo i limiti per le mediaquery
 xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
-#musicplayer {
-  /* display: none !important; */
-}
+
 
 
 
@@ -43,7 +41,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   width: 100%;
   background-color: green;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 
@@ -55,7 +53,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   background-color: #000000;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;        /* ATTENZIONE */
+  /* overflow: hidden;        /* ATTENZIONE */ */
   /* justify-content: space-between; */
 }
 
@@ -77,7 +75,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 /* roba dentro al menulaterale */
 
 .parte-sopra {
-  overflow: hidden;
+  /* overflow: auto; */
 }
 #spotify {
   z-index: 4; /* ATTENZIONE */
@@ -290,7 +288,9 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 #paginonaplaylist {
   background-color: #141922;
-  max-height: 100vh;
+  max-height: calc(100% - 100px);
+  padding-left: 2%;
+  padding-right: 2%;
   /* word-wrap:break-word; */
   /* overflow: hidden; */
   /* width: 100%; */
@@ -337,6 +337,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 #artistipopolari {
   max-height: 100%;
+  padding-bottom: 2%;
 }
 
 #artistipopolari img {
@@ -358,7 +359,8 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 .singoloalbum {
   width: calc(100% / 6);
-  padding: 0 10px;
+  /* padding: 0 10px; */
+  padding-right: 20px;
   margin-top: 20px;
   text-align: center;
 }
@@ -406,6 +408,10 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 @media all and (max-width: 576px) {
+  .singoloalbum {
+    width: 50%;
+  }
+
   #artistipopolari {
     margin-bottom: 50%;
   }
