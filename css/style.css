@@ -7,6 +7,9 @@
 
 /* consideriamo i limiti per le mediaquery
 xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
+#musicplayer {
+  /* display: none !important; */
+}
 
 
 
@@ -33,6 +36,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   display: flex;
 }
 
+
 /* macrostruttura 1/2 */
 #parteprincipale {
   height: calc(100vh - 100px);
@@ -46,7 +50,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #menulaterale {
   padding: 20px;
   width: 200px;
-  max-height: 100%;
+  /* max-height: 100vh; */
   background-color: #000000;
   display: flex;
   flex-wrap: wrap;
@@ -111,6 +115,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   z-index: 1; /* ATTENZIONE */
   overflow: auto;
   max-height: 100%;
+  max-height: calc(100vh - 440px);
 }
 
 #playlist i {
@@ -170,6 +175,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
   #menulaterale {
     justify-content: center;
+
     /* width: 100px; */
   }
 
@@ -230,28 +236,14 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
     display: none;
   }
 
-  #playlist {
-    overflow: scroll;
-    max-height: 100%;
-  }
-
-
-
-
 }
-
-
-
-
-
-
-
 
 /* fine roba dentro il menu laterale */
 
 #sezionecentrale {
   background-color: #080B12;
   /* height: 100%; */
+  max-height: 100%;
   width: calc(100vw - 200px);
   /* display: flex;
   flex-wrap: wrap; */
@@ -297,14 +289,14 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 #paginonaplaylist {
   background-color: #141922;
-  max-height: 100%;
+  max-height: 100vh;
   /* word-wrap:break-word;
   overflow: hidden; */
   /* width: 100%; */
   /* display: flex; */
   /* justify-content: center; */
   /* flex-wrap: wrap; */
-  overflow: scroll;
+  overflow: auto;
 }
 
 
