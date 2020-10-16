@@ -110,6 +110,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #playlist {
   z-index: 1; /* ATTENZIONE */
   overflow: auto;
+  max-height: 100%;
 }
 
 #playlist i {
