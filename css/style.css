@@ -70,6 +70,10 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 /* roba dentro al menulaterale */
+
+.parte-sopra {
+  overflow: hidden;
+}
 #spotify {
   z-index: 4; /* ATTENZIONE */
 }
@@ -105,7 +109,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 
 #playlist {
   z-index: 1; /* ATTENZIONE */
-  
+  overflow: auto;
 }
 
 #playlist i {
@@ -123,7 +127,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #installaapp {
   align-self: flex-end;
   width: 100%;
-  z-index: 3;       /* ATTENZIONE */
+  z-index: 8;       /* ATTENZIONE */
 }
 
 
@@ -225,10 +229,10 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
     display: none;
   }
 
-  /* #playlist {
+  #playlist {
     overflow: scroll;
     max-height: 100%;
-  } */
+  }
 
 
 
@@ -299,9 +303,11 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   /* display: flex; */
   /* justify-content: center; */
   /* flex-wrap: wrap; */
-
   overflow: scroll;
 }
+
+
+/* inizio cose dentro la paginonaplaylist/main */
 
 #menumusica {
   /* background-color: yellow; */
@@ -310,10 +316,8 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 5%;
-
-
 }
-/* inizio cose dentro la paginonaplaylist/main */
+
 #menumusica a {
   color: grey;
   text-decoration: none;
@@ -444,6 +448,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
+  flex-shrink: 1;
 }
 
 #canzone img {
@@ -456,13 +461,12 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   padding: 5px;
 }
 
-
-
 #comandi {
   height: 100px;
   min-width: 350px;
   /* background-color: blue; */
   text-align: center;
+  flex-shrink: 1;
 }
 
 #playetc {
@@ -535,7 +539,6 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 
-
 #volume{
   height: 100px;
   min-width: 200px;
@@ -545,6 +548,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   align-items: center;
   padding-right: 10px;
   position: relative;
+  flex-shrink: 1;
 }
 
 #smallbar {
