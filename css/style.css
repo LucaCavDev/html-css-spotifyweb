@@ -18,13 +18,10 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   flex-wrap: wrap;
   font-family: 'Montserrat', sans-serif;
   color: grey;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-.title {
-  font-size: 40px;
-  font-weight: bold;
-}
+
 
 .white {
   color: white;
@@ -152,6 +149,8 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   border-radius: 50%;
 }
 
+
+
 /* devo toccare il menulaterale, ma se tocco solo lui devo sistemare il resto dei contenitori che se no lasciano un pezzo vuoto a destra */
 @media all and (max-width: 576px) {
   #logobig {
@@ -192,7 +191,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   }
 
   #homesmall img{
-    margin-top: 20px;
+    margin-top: 5px;
     height: auto;
     width: 30px;
   }
@@ -214,7 +213,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   }
 
   #installa i {
-    font-size: 40px;
+    font-size: 20px;
     padding-bottom: 20px;
   }
 
@@ -411,10 +410,6 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   .singoloalbum {
     width: 50%;
   }
-
-  #artistipopolari {
-    margin-bottom: 50%;
-  }
 }
 
 
@@ -431,6 +426,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   justify-content: space-between;
   z-index: 10;
   flex-wrap: nowrap;
+  font-size: 12px;
 }
 
 #musicplayer a {
@@ -443,21 +439,19 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 /* 3 div dentro a musicplayer */
+.padding-right-footer {
+  padding-right: 3%;
+}
+
 #canzone{
   height: 100px;
-  width: 250px;
   /* background-color: red; */
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   padding-left: 10px;
   flex-shrink: 1;
-}
-
-#canzone img {
-  height: 50px;
-  min-width: auto;
 }
 
 #canzone i {
@@ -465,16 +459,18 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   padding: 5px;
 }
 
+
 #comandi {
   height: 100px;
-  min-width: 350px;
+  /* era 350px mi sembra */
   /* background-color: blue; */
   text-align: center;
   flex-shrink: 1;
 }
 
+
 #playetc {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   height: 50px;
   /* width: 200px; */
@@ -485,56 +481,52 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 #playetc i{
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   padding-left: 5px;
   padding-right: 5px;
 }
 #play {
-  font-size: 25px !important;
+  font-size: 20px !important;
 }
 #play:hover {
-  font-size: 35px !important;
+  font-size: 30px !important;
 }
 
 #playetc i:hover {
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
 }
 
+
 #containerbar {
   height: 50px;
-  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: green; */
   position: relative;
-
 }
 
 #containerbar i {
   position: absolute;
   color: white;
-  left: 115px;
-  bottom: 15px;
+  left: 95px;
+  bottom: 18px;
   display: none;
 }
-
-#bigbar:hover + .fa-circle {
-  display: block;
-}
-
 
 #bigbar {
   background-color: grey;
   border-left: 50px solid white;
   height: 5px;
-  width: 200px;
   border-radius: 5px;
-
   margin-right: 10px;
   margin-left: 10px;
+}
+
+#bigbar:hover + .fa-circle {
+  display: block;
 }
 
 #bigbar:hover {
@@ -542,24 +534,22 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   cursor: pointer;
 }
 
-
 #volume{
   height: 100px;
-  min-width: 200px;
   /* background-color: red; */
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   padding-right: 10px;
   position: relative;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
 }
 
 #smallbar {
   background-color: grey;
   border-left: 30px solid white;
   height: 5px;
-  width: 100px;
+  width: 150px;
   border-radius: 5px;
   position: relative;
 }
@@ -572,11 +562,218 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 #volume .fa-circle {
   position: absolute;
   color: white;
-  left: 115px;
-  bottom: 40px;
+  right: 125px;
+  bottom: 42px;
   display: none;
 }
 
 #smallbar:hover + .fa-circle {
   display: block;
+}
+
+@media all and (max-width: 576px) {
+  .title {
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  #canzone {
+    width: 200px;
+  }
+
+  #canzone a {
+    font-size: 10px;
+  }
+
+  #canzone i {
+    font-size: 15px;
+  }
+
+  #canzone img {
+    height: 40px;
+    min-width: auto;
+  }
+
+  #bigbar {
+    width: 200px;
+  }
+
+  #smallbar {
+    width: 60px;
+  }
+
+  #containerbar {
+    width: auto;
+  }
+
+  #bigbar {
+    width: 100px;
+  }
+
+  #containerbar i {
+    left: 75px;
+  }
+
+  #volume .fa-circle {
+    right: 35px;
+  }
+
+  #volume {
+    width: 200px;
+  }
+
+
+}
+@media all and (min-width: 577px) and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #canzone {
+    width: 200px;
+  }
+
+  #canzone a {
+    font-size: 10px;
+  }
+
+  #canzone i {
+    font-size: 15px;
+  }
+
+  #a-capo {
+    display: none;
+  }
+
+  #canzone img {
+    height: 40px;
+    min-width: auto;
+  }
+
+
+  #containerbar {
+    width: auto;
+  }
+
+  #bigbar {
+    width: 100px;
+  }
+
+  #containerbar i {
+    left: 75px;
+  }
+
+
+  #smallbar {
+    width: 90px;
+  }
+
+  #volume .fa-circle {
+    right: 65px;
+  }
+
+  #volume {
+    width: 200px;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .title {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  #canzone {
+    width: 250px;
+  }
+
+  .iconcine-canzone {
+    display: flex;
+    margin-right: 2%;
+  }
+
+  #a-capo {
+    display: none;
+  }
+
+  #canzone a {
+    font-size: 10px;
+  }
+
+  #canzone img {
+    height: 50px;
+    min-width: auto;
+  }
+
+  #containerbar {
+    width: 320px;
+  }
+
+  #bigbar {
+    width: 200px;
+  }
+
+  #containerbar i {
+    left: 105px;
+  }
+
+  #smallbar {
+    width: 90px;
+  }
+
+  #volume .fa-circle {
+    right: 35px;
+  }
+
+  #volume {
+    width: 250px;
+  }
+
+}
+
+@media all and (min-width: 992px) {
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #canzone {
+    width: 250px;
+  }
+
+  .iconcine-canzone {
+    display: flex;
+    margin-right: 2%;
+  }
+
+  #a-capo {
+    display: none;
+  }
+
+  #canzone img {
+    height: 50px;
+    min-width: auto;
+  }
+
+  #containerbar {
+    width: 350px;
+  }
+
+  #bigbar {
+    width: 270px;
+  }
+
+  #containerbar i {
+    left: 85px;
+  }
+
+  #volume {
+    width: 250px;
+  }
+
+  #comandi {
+    width: 350px;
+  }
+
 }
