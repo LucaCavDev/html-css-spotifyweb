@@ -352,8 +352,8 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
 }
 
 .rigonaalbum img{
-  max-width: 100%
-  height: auto;
+  max-width: 100%;
+  max-height: auto;
   /* flex-shrink: 1; */
 }
 .singoloalbum {
@@ -361,6 +361,7 @@ xs sotto i 576px - s 577px_768px - md 769px_991px - lg oltre 992px */
   /* padding: 0 10px; */
   padding-right: 20px;
   margin-top: 20px;
+
   text-align: center;
 }
 
